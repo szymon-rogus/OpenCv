@@ -890,3 +890,87 @@ make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5ea04/fast 
+/usr/bin/make -f CMakeFiles/cmTC_5ea04.dir/build.make CMakeFiles/cmTC_5ea04.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ea04.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_5ea04.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ea04
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ea04.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_5ea04.dir/CheckFunctionExists.c.o  -o cmTC_5ea04 /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3980a/fast 
+/usr/bin/make -f CMakeFiles/cmTC_3980a.dir/build.make CMakeFiles/cmTC_3980a.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3980a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_3980a.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3980a
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3980a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_3980a.dir/CheckFunctionExists.c.o  -o cmTC_3980a 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_054c0/fast 
+/usr/bin/make -f CMakeFiles/cmTC_054c0.dir/build.make CMakeFiles/cmTC_054c0.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_054c0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_054c0.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_054c0
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_054c0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_054c0.dir/CheckFunctionExists.c.o  -o cmTC_054c0 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f927a/fast 
+/usr/bin/make -f CMakeFiles/cmTC_f927a.dir/build.make CMakeFiles/cmTC_f927a.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f927a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_f927a.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f927a
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f927a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_f927a.dir/CheckFunctionExists.c.o  -o cmTC_f927a 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5016d/fast 
+/usr/bin/make -f CMakeFiles/cmTC_5016d.dir/build.make CMakeFiles/cmTC_5016d.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5016d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_5016d.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5016d
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5016d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_5016d.dir/CheckFunctionExists.c.o  -o cmTC_5016d 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17ad7/fast 
+/usr/bin/make -f CMakeFiles/cmTC_17ad7.dir/build.make CMakeFiles/cmTC_17ad7.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17ad7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_17ad7.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_17ad7
+/opt/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17ad7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_17ad7.dir/CheckFunctionExists.c.o  -o cmTC_17ad7 -lICE 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/Object_detection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+

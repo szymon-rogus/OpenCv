@@ -26,10 +26,13 @@ enum new_color {
     PINK = 170,
 };
 
-/// name od color changed to enum
-int* convert_string_to_enum(const string &color);
+typedef struct Scale{
+    int min_h;
+    int max_h;
+};
 
-/// color name changed to enum
+Scale convert_string_to_enum(const string &color);
+
 int get_new_color(const string &color);
 
 #endif //OBJECT_DETECTION_COLORS_HPP

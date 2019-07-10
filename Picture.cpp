@@ -52,21 +52,18 @@ void Picture::change_color(string old_color, string &new_color) {
 
     cvtColor(this -> image, colorDetection, COLOR_BGR2HSV);
     cvtColor(this -> image, new_image, COLOR_BGR2HSV);
-    int* scale;
+    Scale scale;
 
     /// no matter if color name was written with CAPS LOCK or not
     transform(old_color.begin(), old_color.end(), old_color.begin(), ::tolower);
     scale = convert_string_to_enum(old_color);
 
     /// detecting old color and settting it all to new one
-    inRange(colorDetection, Scalar(scale[0], 50, 50), Scalar(scale[1], 255, 255), colorDetection);
+    inRange(colorDetection, Scalar(scale.min_h, 50, 50), Scalar(scale.max_h, 255, 255), colorDetection);
     new_image.setTo(Scalar(get_new_color(new_color), 255, 255), colorDetection);
 
     cvtColor(new_image, new_image, COLOR_HSV2BGR);
     imshow(window, new_image);
-
-    /// remember to free memory!
-    delete [] scale;
     waitKey();
 }
 
@@ -136,7 +133,7 @@ void Picture::circle_detection() {
     vector<Vec3f> circles;
 
     /// Apply the Hough Transform to find the circles
-    HoughCircles( src_gray, circles, HOUGH_GRADIENT, 1, src_gray.rows/4.0, 200, 100);
+    HoughCircles( src_gray, circles, HOUGH_GRADIENT, 1, src_gray.rows/8.0, 200, 100);
 
     /// Draw the circles detected
     for( auto i = 0; i < circles.size(); i++ )
@@ -149,7 +146,6 @@ void Picture::circle_detection() {
         circle( this -> image, center, radius, Scalar(0,0,255), 3, LINE_AA, 0 );
     }
 
-    /// Show your results
     namedWindow( "Circle detection", WINDOW_AUTOSIZE );
     imshow( "Circle detection", this -> image );
 
@@ -200,8 +196,6 @@ void Picture::square_detection() {
                 approxPolyDP(contours[i], approx, arcLength(contours[i], true)*0.02, true);
 
                 /// square contours should have 4 vertices after approximation
-                /// relatively large area (to filter out noisy contours)
-                /// and be convex.
                 if( approx.size() == 4 && fabs(contourArea(approx)) > 1000 && isContourConvex(approx) ){
                     double maxCosine = 0;
 
@@ -212,7 +206,6 @@ void Picture::square_detection() {
                     }
 
                     /// if cosines of all angles are small
-                    /// (all angles are ~90 degree) then write quandrange
                     if( maxCosine < 0.3 )
                         squares.push_back(approx);
                 }
@@ -233,15 +226,13 @@ void Picture::square_detection() {
 
 void Picture::triangles_detection() {
     Mat img_rgb,img_gray,canny_output,drawing;
-    int thresh = 100;
-    int max_thresh = 255;
-
     img_rgb  = this -> image;
+
     cvtColor(img_rgb,img_gray,COLOR_RGB2GRAY);
     vector<vector<Point> > contours;
     vector<Vec4i> hierarchy;
 
-    Canny( img_gray, canny_output, thresh, thresh*2, 3 );
+    Canny( img_gray, canny_output, 100, 200, 3 );
     findContours( canny_output, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
     drawing = Mat::zeros( canny_output.size(), CV_8UC3 );
 

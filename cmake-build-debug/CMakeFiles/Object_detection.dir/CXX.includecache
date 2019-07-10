@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
+/home/szymon/CLionProjects/Object_detection/Colors.cpp
+My_Exeption.hpp
+/home/szymon/CLionProjects/Object_detection/My_Exeption.hpp
+Colors.hpp
+/home/szymon/CLionProjects/Object_detection/Colors.hpp
+
 /home/szymon/CLionProjects/Object_detection/Colors.hpp
 
 /home/szymon/CLionProjects/Object_detection/My_Exeption.hpp
 iostream
 -
 
+/home/szymon/CLionProjects/Object_detection/Picture.cpp
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+Picture.hpp
+/home/szymon/CLionProjects/Object_detection/Picture.hpp
+
 /home/szymon/CLionProjects/Object_detection/Picture.hpp
 My_Exeption.hpp
 /home/szymon/CLionProjects/Object_detection/My_Exeption.hpp
 Colors.hpp
 /home/szymon/CLionProjects/Object_detection/Colors.hpp
+
+/home/szymon/CLionProjects/Object_detection/Video.cpp
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+unistd.h
+-
+Video.hpp
+/home/szymon/CLionProjects/Object_detection/Video.hpp
 
 /home/szymon/CLionProjects/Object_detection/Video.hpp
 My_Exeption.hpp
@@ -26,14 +50,16 @@ Colors.hpp
 
 /home/szymon/CLionProjects/Object_detection/main.cpp
 opencv2/imgproc.hpp
-/home/szymon/CLionProjects/Object_detection/opencv2/imgproc.hpp
+-
 opencv2/imgcodecs.hpp
-/home/szymon/CLionProjects/Object_detection/opencv2/imgcodecs.hpp
+-
 opencv2/videoio.hpp
-/home/szymon/CLionProjects/Object_detection/opencv2/videoio.hpp
+-
 opencv2/highgui.hpp
-/home/szymon/CLionProjects/Object_detection/opencv2/highgui.hpp
-iostream
+-
+X11/Xlib.h
+-
+unistd.h
 -
 Picture.hpp
 /home/szymon/CLionProjects/Object_detection/Picture.hpp
@@ -836,6 +862,10 @@ opencv2/imgcodecs.hpp
 opencv2/videoio.hpp
 /usr/local/include/opencv4/opencv2/opencv2/videoio.hpp
 
+/usr/local/include/opencv4/opencv2/highgui/highgui.hpp
+opencv2/highgui.hpp
+/usr/local/include/opencv4/opencv2/highgui/opencv2/highgui.hpp
+
 /usr/local/include/opencv4/opencv2/imgcodecs.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
@@ -843,6 +873,10 @@ opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+
+/usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
+opencv2/imgproc.hpp
+/usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/local/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp

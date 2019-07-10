@@ -49,9 +49,9 @@ void Video::show_canny_edges() {
             GaussianBlur(edges, edges, Size(7,7), 2, 2);
             Canny(edges, edges, 0, 30, 3);
             imshow("edges", edges);
-            if(waitKey(50) >= 0) break;
+            if(waitKey(10) >= 0) break;
         }
-        if(waitKey(50) >= 0) break;
+        if(waitKey(10) >= 0) break;
     }
 }
 
@@ -66,11 +66,11 @@ void Video::show_gray() {
 
         /// check if its loaded correctly
         if(!frame.empty()){
-            cvtColor(frame, edges, COLOR_BGR2GRAY);
+            cvtColor(frame, edges, COLOR_RGB2GRAY);
             imshow("edges", edges);
-            if(waitKey(50) >= 0) break;
+            if(waitKey(10) >= 0) break;
         }
-        if(waitKey(50) >= 0) break;
+        if(waitKey(10) >= 0) break;
     }
 }
 
@@ -85,7 +85,7 @@ void Video::show_with_swaped_colors(string old_color, const string &new_color) {
         /// check if its loaded correctly
         if(!frame.empty()){
             Mat edges, edges_new;
-            int* scale;
+            Scale scale;
 
             cvtColor(frame, edges, COLOR_BGR2HSV);
             cvtColor(frame, edges_new, COLOR_BGR2HSV);
@@ -93,17 +93,15 @@ void Video::show_with_swaped_colors(string old_color, const string &new_color) {
             transform(old_color.begin(), old_color.end(), old_color.begin(), ::tolower);
             scale = convert_string_to_enum(old_color);
 
-            inRange(edges, Scalar(scale[0], 50, 50), Scalar(scale[1], 255, 255), edges_new);
+            inRange(edges, Scalar(scale.min_h, 50, 50), Scalar(scale.max_h, 255, 255), edges_new);
             edges.setTo(Scalar(get_new_color(new_color), 255, 255), edges_new);
 
             cvtColor(edges, edges, COLOR_HSV2BGR);
 
-            usleep(1000);
             imshow("edges", edges);
-            delete [] scale;
-            if(waitKey(50) >= 0) break;
+            if(waitKey(10) >= 0) break;
         }
-        if(waitKey(50) >= 0) break;
+        if(waitKey(10) >=0) break;
     }
 }
 
@@ -120,8 +118,8 @@ void Video::show_as_hsv() {
         if(!frame.empty()){
             cvtColor(frame, edges, COLOR_BGR2HSV);
             imshow("edges", edges);
-            if(waitKey(50) >= 0) break;
+            if(waitKey(10) >= 0) break;
         }
-        if(waitKey(50) >= 0) break;
+        if(waitKey(10) >= 0) break;
     }
 }

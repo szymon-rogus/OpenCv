@@ -1,39 +1,41 @@
 #include "My_Exeption.hpp"
 #include "Colors.hpp"
 
-int* convert_string_to_enum(const string &color){
-    int *scale = new int[2];
+Scale convert_string_to_enum(const string &color){
+    Scale scale;
+    scale.min_h = 0;
+    scale.max_h = 0;
 
     if(color == "red"){
-        scale[0] = RED_MIN; scale[1] = RED_MAX;
+        scale.min_h = RED_MIN; scale.max_h = RED_MAX;
     }
     else
     if(color == "orange"){
-        scale[0] = ORANGE_MIN; scale[1] = ORANGE_MAX;
+        scale.min_h = ORANGE_MIN; scale.max_h = ORANGE_MAX;
     }
     else
     if(color == "yellow"){
-        scale[0] = YELLOW_MIN; scale[1] = YELLOW_MAX;
+        scale.min_h = YELLOW_MIN; scale.max_h = YELLOW_MAX;
     }
     else
     if(color == "green"){
-        scale[0] = GREEN_MIN; scale[1] = GREEN_MAX;
+        scale.min_h = GREEN_MIN; scale.max_h = GREEN_MAX;
     }
     else
     if(color == "sea"){
-        scale[0] = SEA_MIN; scale[1] = SEA_MAX;
+        scale.min_h = SEA_MIN; scale.max_h = SEA_MAX;
     }
     else
     if(color == "blue"){
-        scale[0] = BLUE_MIN; scale[1] = BLUE_MAX;
+        scale.min_h = BLUE_MIN; scale.max_h = BLUE_MAX;
     }
     else
     if(color == "purple"){
-        scale[0] = PURPLE_MIN; scale[1] = PURPLE_MAX;
+        scale.min_h = PURPLE_MIN; scale.max_h = PURPLE_MAX;
     }
     else
     if(color == "pink"){
-        scale[0] = PINK_MIN; scale[1] = PINK_MAX;
+        scale.min_h = PINK_MIN; scale.min_h = PINK_MAX;
     }
     else{
         My_Exeption ex = My_Exeption("Unknown color!");
